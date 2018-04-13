@@ -7,19 +7,36 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CLLocationManagerDelegate{
+    
+    var myLocationManager: CLLocationManager!
+    
+    
+    @IBOutlet weak var testMapView: MKMapView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+        
+        //LocationManagerの生成
+        myLocationManager = CLLocationManager()
+        
+        //位置情報使用許可のリクエストを表示するメソッドの呼び出し
+        myLocationManager.requestWhenInUseAuthorization()
+        
+        }
+    
+    //位置情報取得に失敗したときに呼び出されるメソッド
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error")
 
+      }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

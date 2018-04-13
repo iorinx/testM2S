@@ -12,6 +12,8 @@
 		596F77D6207F3E8D00B30D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596F77D4207F3E8D00B30D5F /* Main.storyboard */; };
 		596F77D8207F3E8D00B30D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596F77D7207F3E8D00B30D5F /* Assets.xcassets */; };
 		596F77DB207F3E8D00B30D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596F77D9207F3E8D00B30D5F /* LaunchScreen.storyboard */; };
+		59ED3E5120806A5E0080983D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ED3E5020806A5E0080983D /* MapKit.framework */; };
+		59ED3E5320806A6C0080983D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ED3E5220806A6C0080983D /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		596F77D7207F3E8D00B30D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		596F77DA207F3E8D00B30D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		596F77DC207F3E8D00B30D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59ED3E5020806A5E0080983D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		59ED3E5220806A6C0080983D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59ED3E5320806A6C0080983D /* CoreLocation.framework in Frameworks */,
+				59ED3E5120806A5E0080983D /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				596F77CF207F3E8D00B30D5F /* M2S */,
 				596F77CE207F3E8D00B30D5F /* Products */,
+				59ED3E4F20806A5E0080983D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,6 +69,15 @@
 				596F77DC207F3E8D00B30D5F /* Info.plist */,
 			);
 			path = M2S;
+			sourceTree = "<group>";
+		};
+		59ED3E4F20806A5E0080983D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59ED3E5220806A6C0080983D /* CoreLocation.framework */,
+				59ED3E5020806A5E0080983D /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +315,7 @@
 				596F77E1207F3E8D00B30D5F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
