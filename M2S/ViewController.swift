@@ -15,6 +15,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     var myLocationManager: CLLocationManager = CLLocationManager()
     
     @IBOutlet weak var testMapView: MKMapView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

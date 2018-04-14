@@ -14,6 +14,7 @@
 		596F77DB207F3E8D00B30D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596F77D9207F3E8D00B30D5F /* LaunchScreen.storyboard */; };
 		59ED3E5120806A5E0080983D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ED3E5020806A5E0080983D /* MapKit.framework */; };
 		59ED3E5320806A6C0080983D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59ED3E5220806A6C0080983D /* CoreLocation.framework */; };
+		59ED3E552080832A0080983D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED3E542080832A0080983D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		596F77DC207F3E8D00B30D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59ED3E5020806A5E0080983D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		59ED3E5220806A6C0080983D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		59ED3E542080832A0080983D /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				596F77D0207F3E8D00B30D5F /* AppDelegate.swift */,
 				596F77D2207F3E8D00B30D5F /* ViewController.swift */,
 				596F77D4207F3E8D00B30D5F /* Main.storyboard */,
+				59ED3E542080832A0080983D /* DetailViewController.swift */,
 				596F77D7207F3E8D00B30D5F /* Assets.xcassets */,
 				596F77D9207F3E8D00B30D5F /* LaunchScreen.storyboard */,
 				596F77DC207F3E8D00B30D5F /* Info.plist */,
@@ -152,6 +155,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59ED3E552080832A0080983D /* DetailViewController.swift in Sources */,
 				596F77D3207F3E8D00B30D5F /* ViewController.swift in Sources */,
 				596F77D1207F3E8D00B30D5F /* AppDelegate.swift in Sources */,
 			);
