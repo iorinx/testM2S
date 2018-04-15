@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "半径を選択して下さい"; ObjectID = "440-gi-hJk"; */
+"440-gi-hJk.text" = "半径を選択して下さい";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "5iY-iy-eiS"; */
+"5iY-iy-eiS.title" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Back"; ObjectID = "Igy-7a-YGb"; */
+"Igy-7a-YGb.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "700m"; ObjectID = "OJw-Tf-HUn"; */
+"OJw-Tf-HUn.normalTitle" = "700m";
+
+/* Class = "UIButton"; normalTitle = "500m"; ObjectID = "W6j-94-vUf"; */
+"W6j-94-vUf.normalTitle" = "500m";
+
+/* Class = "UIButton"; normalTitle = "300m"; ObjectID = "XCc-wt-Uny"; */
+"XCc-wt-Uny.normalTitle" = "300m";

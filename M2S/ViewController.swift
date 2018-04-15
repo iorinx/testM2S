@@ -57,6 +57,21 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func range300Button(_ sender: Any) {
+        print(300)
+    }
+    
+    @IBAction func range500Button(_ sender: Any) {
+        print(500)
+    }
+    
+    @IBAction func range1000Button(_ sender: Any) {
+        print(1000)
+    }
+    
+    
 
 }
 

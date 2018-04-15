@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5949807920839A33009EB8A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		596F77CD207F3E8D00B30D5F /* M2S.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M2S.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596F77D0207F3E8D00B30D5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		596F77D2207F3E8D00B30D5F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -168,6 +169,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				596F77D5207F3E8D00B30D5F /* Base */,
+				5949807920839A33009EB8A5 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
