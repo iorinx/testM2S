@@ -24,6 +24,44 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        //LocationManagerの生成
+        myLocationManager.delegate = self
+        
+        //位置情報の取得を開始する。
+        myLocationManager.startUpdatingLocation()
+        
+        //位置情報使用許可のリクエストを表示するメソッドの呼び出し
+        myLocationManager.requestWhenInUseAuthorization()
+        
+        
+    //    self.navigationItem.leftBarButtonItem = self.editButtonItem()
+        
+      //  let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertNewObject:")
+      //  self.navigationItem.rightBarButtonItem = addButton
+        
+        // API先指定
+        var url = NSURL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=1")
+        
+        var reqest = NSURLRequest(URL: url as! URL )
+        NSURLConnection.sendAsynchronousRequest(reqest,queue:NSOperationQueue.mainQueue(),completionHandler:{
+            (res: NSURLResponse!, data: NSData!, error: NSError!) in
+            let json = JSONValue(data)
+            
+            if let url = json["results"]["salon"][0]["urls"]["pc"].string{
+                println(url)
+                self.url = url
+            }
+            
+            if let image = json["results"]["salon"][0]["mood"][0]["photo"].string{
+                println(image)
+            }
+            if let caption = json["results"]["salon"][0]["mood"][0]["caption"].string{
+                println(caption)
+                
+            }
+        })
+        
        /* let RESURL: NSURLComponents? = NSURLComponents(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=3")
         //リクエストに必要な情報を生成
 
@@ -47,7 +85,7 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate{
         task.resume()
         // Do any additional setup after loading the view. */
         
-        let url: URL = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=1")!
+   /*     let url: URL = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=1")!
         let task = URLSession.shared.dataTask(with: URLRequest(url: url), completionHandler: { (data, response, error) in
             
             if error != nil {
@@ -56,18 +94,34 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate{
             } else {
                 
                let json = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-            
+                
+                
                print(json)
                 
                //let json = try decoder.decode(response.self, from data!)
             }
             
         })
-        task.resume()
+        task.resume() *?
         
     }
 
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        for location in locations{
     
+            let latitude = location.coordinate.latitude
+            let longitude = location.coordinate.longitude
+          
+            
+            
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error")
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
