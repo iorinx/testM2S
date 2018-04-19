@@ -105,7 +105,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
           let detailViewController = segue.destination as! DetailViewController
           
           //詳細画面に表示するURL名を生成
-          let detailURLName = NSURL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=1")
+          let detailURLName = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=1")
           //詳細画面にURLを渡す
           detailViewController.restrunURL = detailURLName
      }
@@ -120,10 +120,10 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
                let detailViewController = segue.destination as! DetailViewController
           
                //詳細画面に表示するURL名を生成
-               let detailURLName = NSURL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=2")
+               let detailURLName = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=2")
                //詳細画面にURLを渡す
                detailViewController.restrunURL = detailURLName
-          }
+     }
     }
     
     @IBAction func range1000Button(_ sender: Any) {
@@ -134,7 +134,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
                let detailViewController = segue.destination as! DetailViewController
           
                //詳細画面に表示するURL名を生成
-               let detailURLName = NSURL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=3")
+               let detailURLName = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=3")
                //詳細画面にURLを渡す
                detailViewController.restrunURL = detailURLName
           }
