@@ -7,12 +7,15 @@
 //
 
 import UIKit
+import MapKit
+import CoreLocation
 
 
-
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, CLLocationManagerDelegate{
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var myLocationManager: CLLocationManager = CLLocationManager()
     
     var restrunList: [(maker:String, name:String , link:NSURL)] = []
     
@@ -42,7 +45,7 @@ class DetailViewController: UIViewController {
             }
         })
         task.resume()
-        // Do any additional setup after loading the view.*/
+        // Do any additional setup after loading the view. */
         
         let url: URL = URL(string: "https://api.gnavi.co.jp/RestSearchAPI/20150630/?keyid=27917f270acba305b505d2dac2c6528f&format=json&latitude=35.181446&longitude=136.906398&range=1")!
         let task = URLSession.shared.dataTask(with: URLRequest(url: url), completionHandler: { (data, response, error) in

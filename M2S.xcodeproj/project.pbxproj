@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		596AD308208898BF0021D28D /* M2STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AD307208898BF0021D28D /* M2STests.swift */; };
+		596AD30F208899330021D28D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED3E542080832A0080983D /* DetailViewController.swift */; };
 		596F77D1207F3E8D00B30D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596F77D0207F3E8D00B30D5F /* AppDelegate.swift */; };
 		596F77D3207F3E8D00B30D5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596F77D2207F3E8D00B30D5F /* ViewController.swift */; };
 		596F77D6207F3E8D00B30D5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 596F77D4207F3E8D00B30D5F /* Main.storyboard */; };
@@ -17,8 +19,21 @@
 		59ED3E552080832A0080983D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED3E542080832A0080983D /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		596AD30A208898BF0021D28D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 596F77C5207F3E8D00B30D5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 596F77CC207F3E8D00B30D5F;
+			remoteInfo = M2S;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		5949807920839A33009EB8A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		596AD305208898BE0021D28D /* M2STests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M2STests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		596AD307208898BF0021D28D /* M2STests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2STests.swift; sourceTree = "<group>"; };
+		596AD309208898BF0021D28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		596F77CD207F3E8D00B30D5F /* M2S.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = M2S.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		596F77D0207F3E8D00B30D5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		596F77D2207F3E8D00B30D5F /* ViewController.swift */ = {isa = PBXFileReference; indentWidth = 5; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +47,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		596AD302208898BE0021D28D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		596F77CA207F3E8D00B30D5F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -44,10 +66,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		596AD306208898BE0021D28D /* M2STests */ = {
+			isa = PBXGroup;
+			children = (
+				596AD307208898BF0021D28D /* M2STests.swift */,
+				596AD309208898BF0021D28D /* Info.plist */,
+			);
+			path = M2STests;
+			sourceTree = "<group>";
+		};
 		596F77C4207F3E8D00B30D5F = {
 			isa = PBXGroup;
 			children = (
 				596F77CF207F3E8D00B30D5F /* M2S */,
+				596AD306208898BE0021D28D /* M2STests */,
 				596F77CE207F3E8D00B30D5F /* Products */,
 				59ED3E4F20806A5E0080983D /* Frameworks */,
 			);
@@ -57,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				596F77CD207F3E8D00B30D5F /* M2S.app */,
+				596AD305208898BE0021D28D /* M2STests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,6 +120,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		596AD304208898BE0021D28D /* M2STests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 596AD30C208898BF0021D28D /* Build configuration list for PBXNativeTarget "M2STests" */;
+			buildPhases = (
+				596AD301208898BE0021D28D /* Sources */,
+				596AD302208898BE0021D28D /* Frameworks */,
+				596AD303208898BE0021D28D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				596AD30B208898BF0021D28D /* PBXTargetDependency */,
+			);
+			name = M2STests;
+			productName = M2STests;
+			productReference = 596AD305208898BE0021D28D /* M2STests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		596F77CC207F3E8D00B30D5F /* M2S */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 596F77DF207F3E8D00B30D5F /* Build configuration list for PBXNativeTarget "M2S" */;
@@ -110,14 +161,24 @@
 		596F77C5207F3E8D00B30D5F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = iorin;
 				TargetAttributes = {
+					596AD304208898BE0021D28D = {
+						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 596F77CC207F3E8D00B30D5F;
+					};
 					596F77CC207F3E8D00B30D5F = {
 						CreatedOnToolsVersion = 8.3.3;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -135,11 +196,19 @@
 			projectRoot = "";
 			targets = (
 				596F77CC207F3E8D00B30D5F /* M2S */,
+				596AD304208898BE0021D28D /* M2STests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		596AD303208898BE0021D28D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		596F77CB207F3E8D00B30D5F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,6 +222,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		596AD301208898BE0021D28D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				596AD30F208899330021D28D /* DetailViewController.swift in Sources */,
+				596AD308208898BF0021D28D /* M2STests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		596F77C9207F3E8D00B30D5F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +242,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		596AD30B208898BF0021D28D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 596F77CC207F3E8D00B30D5F /* M2S */;
+			targetProxy = 596AD30A208898BF0021D28D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		596F77D4207F3E8D00B30D5F /* Main.storyboard */ = {
@@ -186,6 +272,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		596AD30D208898BF0021D28D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = M2STests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.M2STests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/M2S.app/M2S";
+			};
+			name = Debug;
+		};
+		596AD30E208898BF0021D28D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = M2STests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.M2STests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/M2S.app/M2S";
+			};
+			name = Release;
+		};
 		596F77DD207F3E8D00B30D5F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -328,6 +456,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		596AD30C208898BF0021D28D /* Build configuration list for PBXNativeTarget "M2STests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				596AD30D208898BF0021D28D /* Debug */,
+				596AD30E208898BF0021D28D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		596F77C8207F3E8D00B30D5F /* Build configuration list for PBXProject "M2S" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

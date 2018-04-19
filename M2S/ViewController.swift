@@ -24,14 +24,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
      
-     //LocationManagerの生成
-     myLocationManager.delegate = self
+          //LocationManagerの生成
+          myLocationManager.delegate = self
      
-     //位置情報の取得を開始する。
-     myLocationManager.startUpdatingLocation()
+          //位置情報の取得を開始する。
+          myLocationManager.startUpdatingLocation()
      
-     //位置情報使用許可のリクエストを表示するメソッドの呼び出し
-     myLocationManager.requestWhenInUseAuthorization()
+          //位置情報使用許可のリクエストを表示するメソッドの呼び出し
+          myLocationManager.requestWhenInUseAuthorization()
      
      }
      
