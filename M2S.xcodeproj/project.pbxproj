@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		595F7DED2091A080002C5985 /* DetailViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595F7DEC2091A080002C5985 /* DetailViewController2.swift */; };
+		595F7DEF2091A1D1002C5985 /* DetailViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595F7DEE2091A1D1002C5985 /* DetailViewController3.swift */; };
 		596AD308208898BF0021D28D /* M2STests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AD307208898BF0021D28D /* M2STests.swift */; };
 		596AD30F208899330021D28D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59ED3E542080832A0080983D /* DetailViewController.swift */; };
 		596F77D1207F3E8D00B30D5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596F77D0207F3E8D00B30D5F /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		5949807920839A33009EB8A5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		595F7DEC2091A080002C5985 /* DetailViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController2.swift; sourceTree = "<group>"; };
+		595F7DEE2091A1D1002C5985 /* DetailViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController3.swift; sourceTree = "<group>"; };
 		596AD305208898BE0021D28D /* M2STests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = M2STests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		596AD307208898BF0021D28D /* M2STests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = M2STests.swift; sourceTree = "<group>"; };
 		596AD309208898BF0021D28D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				596F77D0207F3E8D00B30D5F /* AppDelegate.swift */,
 				596F77D2207F3E8D00B30D5F /* ViewController.swift */,
 				596F77D4207F3E8D00B30D5F /* Main.storyboard */,
+				595F7DEE2091A1D1002C5985 /* DetailViewController3.swift */,
+				595F7DEC2091A080002C5985 /* DetailViewController2.swift */,
 				59ED3E542080832A0080983D /* DetailViewController.swift */,
 				596F77D7207F3E8D00B30D5F /* Assets.xcassets */,
 				596F77D9207F3E8D00B30D5F /* LaunchScreen.storyboard */,
@@ -237,6 +243,8 @@
 			files = (
 				59ED3E552080832A0080983D /* DetailViewController.swift in Sources */,
 				596F77D3207F3E8D00B30D5F /* ViewController.swift in Sources */,
+				595F7DED2091A080002C5985 /* DetailViewController2.swift in Sources */,
+				595F7DEF2091A1D1002C5985 /* DetailViewController3.swift in Sources */,
 				596F77D1207F3E8D00B30D5F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

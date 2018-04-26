@@ -98,7 +98,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
     }
     
     
-    @IBAction func range300Button(_ sender: Any) {
+    /*@IBAction func range300Button(_ sender: Any) {
           func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
           
           //詳細画面を取得する
@@ -138,7 +138,7 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
                //詳細画面にURLを渡す
                detailViewController.restrunURL = detailURLName
           }
-     }
+     }*/
     }
     
     
